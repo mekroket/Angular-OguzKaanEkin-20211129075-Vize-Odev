@@ -77,7 +77,7 @@
                 <ol class="breadcrumb mb-4">
                     <li class="breadcrumb-item active">Araçlarınız Yönetin</li>
                 </ol>
-                <div class="alert alert-danger" *ngIf="OturumKontrol">Eğer Giriş Yapmadıysanız Araçları veya Kiralama işlemini yapamazsınız <span><a href=""  routerLink="/login">Giriş Yap</a></span></div>
+                <div class="alert alert-danger" *ngIf="!servis.OturumKontrol()" >Eğer Giriş Yapmadıysanız Araçları veya Kiralama işlemini yapamazsınız <span><a href=""  routerLink="/login">Giriş Yap</a></span></div>
 
 
 
