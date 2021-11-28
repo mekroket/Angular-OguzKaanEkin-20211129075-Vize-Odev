@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="cars.component.css">
+
+<app-nav></app-nav>
+<br><br><br><br><br><br>
+<h1 class="text-center">En Kolay Ve Uygun Araç Kiralama</h1>
+<h3 class="text-center">Araç Kategorileri</h3>
+<hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Araç Türü</th>
+      <th  scope="col">Araçlar</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let grup of gruplar">
+      
+      <td>{{grup.id}}</td>
+      <td>{{grup.adi}}</td>
+      <td><button class="btn btn-outline-primary" [routerLink]="['/ders',grup.id]">Araçlar</button></td>
+    </tr>
+  </tbody>
+  
+</table>
+<br><br><br>
+<app-footer></app-footer>

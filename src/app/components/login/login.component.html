@@ -1,0 +1,26 @@
+<app-nav></app-nav>
+<link rel="stylesheet" href="login.component.css">
+<br><br>
+<body class="text-center">
+  <form class="form-signin">
+    <img class="mb-4" src="assets/logo.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Giriş Yap</h1>
+
+    <label for="inputEmail" class="sr-only">Eposta</label>
+    <input type="text" name="kadi" class="form-control" #kadi placeholder="Epostanız">
+    <label for="inputPassword" class="sr-only">Şifre</label>
+    <input type="password" name="parola" class="form-control" #parola placeholder="Şifreniz">
+    <div class="checkbox mb-3">
+      
+    </div>
+    
+      <button class="btn btn-outline-primary" (click)="GirisYap(kadi.value,parola.value)">Giriş</button>
+      
+    
+    <p class="mt-5 mb-3 text-muted">&copy; 2021-2022</p>
+  </form>
+  
+</body>
+<br><br><br><br><br><br><br><br>
+
+<app-footer></app-footer>

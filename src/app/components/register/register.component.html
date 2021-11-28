@@ -1,0 +1,25 @@
+<app-nav></app-nav>
+<link rel="stylesheet" href="register.component.css">
+
+<br><br>
+
+<body class="text-center">
+  <form class="form-signin" #kayitFormu = "ngForm">
+    <img class="mb-4" src="assets/logo.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Kayıt Ol</h1>
+    <label for="inputEmail" class="sr-only">Ad Soyad</label>
+    <input type="text" id="text" class="form-control" placeholder="Adınız ve Soyadınız"  name="adsoyad"  [ngClass]="{'is-invalid': adsoyad.invalid && adsoyad.dirty}" #adsoyad="ngModel"  [(ngModel)]="secUye.adsoyad" required>
+    <label for="inputEmail" class="sr-only">Email Adresiniz</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email Adresiniz" name="mail" [ngClass]="{'is-invalid': kadi.invalid && kadi.dirty}" #kadi="ngModel" [(ngModel)]="secUye.kadi" required>
+    <label for="inputPassword" class="sr-only">Şifre</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Şifreniz" name="parola" #parola="ngModel" [ngClass]="{'is-invalid': mail.invalid && mail.dirty}" #mail="ngModel" [(ngModel)]="secUye.parola" required>
+    <div class="checkbox mb-3">
+
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit " [disabled]="kayitFormu.invalid" (click)="UyeKaydet()">Kayıt Ol</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2021-2022</p>
+  </form>
+
+</body>
+<br><br><br>
+<app-footer><app-footer>
