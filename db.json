@@ -77,6 +77,20 @@
       "parola": "123134254678690*",
       "admin": 0,
       "id": 78
+    },
+    {
+      "adsoyad": "ornek",
+      "kadi": "ornek@gmail.com",
+      "parola": "123",
+      "admin": 0,
+      "id": 427
+    },
+    {
+      "adsoyad": "ornek",
+      "kadi": "ornek@gmail.com",
+      "parola": "123",
+      "admin": 0,
+      "id": 351
     }
   ],
   "kayit": [
@@ -585,6 +599,12 @@
       "grupId": "7",
       "dersadi": "Mercedes-BenzAMG E63 Wagon",
       "kredi": "700.000"
+    },
+    {
+      "id": 31,
+      "grupId": "2",
+      "dersadi": "Wolskwagen Jetta3",
+      "kredi": "7.200.000₺"
     }
   ]
 }
